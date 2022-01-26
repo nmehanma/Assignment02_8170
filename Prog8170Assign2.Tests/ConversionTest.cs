@@ -9,5 +9,6 @@ namespace Prog8170Assign2.Tests
 {
     class ConversionTest
     {
+
     }
 }

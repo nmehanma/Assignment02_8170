@@ -10,6 +10,8 @@ namespace Prog8170Assign2
     {
         static void Main(string[] args)
         {
+            Conversion temperatureConverter = new Conversion();
+            Console.WriteLine("menu");                        
         }
     }
 }
