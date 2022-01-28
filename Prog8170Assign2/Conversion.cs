@@ -8,23 +8,27 @@ namespace Prog8170Assign2
 {
     public class Conversion
     {
-        //private static int x = 1;
-        //nothing inside of round brackets mean default constructor
+
+        //properties 
+        private int temperatureInput; //field
+
+        //default constructor
         public Conversion()
         {
             this.temperatureInput = 1;
         }
-        
-        //non default constructor
-        public Conversion(int temp)
+
+        //non default construtor
+
+        public int TemperatureInput
         {
-            this.temperatureInput = temp;            
+            get { return temperatureInput; }
+            set { temperatureInput = value; }
         }
 
-        private int temperatureInput;
-       
+                             
         public double ConvertCelciusToFahrenheit()
-        {
+        { 
             return (this.temperatureInput * 9 / 5) + 32;
         }
         public double ConvertCelciusToKelvin()
@@ -48,4 +52,6 @@ namespace Prog8170Assign2
             return (this.temperatureInput - 32) * 5 / 9;
         }       
     }
+
 }
+
