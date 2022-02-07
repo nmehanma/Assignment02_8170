@@ -11,6 +11,25 @@ namespace Prog8170Assign2.Tests
     public class ConversionTest
     {
         [Test]
+
+        public void ConvertCelsiusToFahrenheit_Added_Non_Integer()
+        {
+            //ARRANGE
+            var temp = new Conversion();
+            
+            private int temperatureInput
+
+            //ACT
+
+
+            //ASSERT
+
+
+        }
+
+
+
+
         public void ConvertCelsiusToFahrenheit_NegativeInteger_ThrowsException()
         {
             //Arrange
