@@ -7,8 +7,24 @@ using NUnit.Framework;
 
 namespace Prog8170Assign2.Tests
 {
-    class ConversionTest
+   [TestFixture]
+    public class ConversionTest
     {
+        [Test]
+        public void ConvertCelsiusToFahrenheit_NegativeInteger_ThrowsException()
+        {
+            //Arrange
+            Conversion temp = new Conversion();
+            new Conversion { TemperatureInput = "a"  };
+           
+            //Act
+                         
+            bool boolResult = System.Convert.ToBoolean((temp.ConvertCelciusToFahrenheit()));                     
+
+            //Assert
+            Assert.That(boolResult, Is.True);
+
+        }                
 
     }
 }
