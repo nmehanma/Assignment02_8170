@@ -119,7 +119,7 @@ namespace Prog8170Assign2.Tests
             temp.ConvertFahrenheitToCelsius();
 
             //ASSERT
-            Assert.AreEqual(-16.7, temp.ConvertFahrenheitToCelsius());
+            Assert.AreEqual(-16, temp.ConvertFahrenheitToCelsius());
         }
 
         [Test]
@@ -147,7 +147,7 @@ namespace Prog8170Assign2.Tests
             temp.ConvertFahrenheitToKelvin();
 
             //ASSERT
-            Assert.AreEqual(255, temp.ConvertFahrenheitToKelvin());
+            Assert.AreEqual(256, temp.ConvertFahrenheitToKelvin());
         }
 
         [Test]
@@ -161,7 +161,7 @@ namespace Prog8170Assign2.Tests
             temp.ConvertFahrenheitToKelvin();
 
             //ASSERT
-            Assert.AreEqual(256, temp.ConvertFahrenheitToKelvin());
+            Assert.AreEqual(257, temp.ConvertFahrenheitToKelvin());
         }
 
         [Test]
@@ -175,7 +175,7 @@ namespace Prog8170Assign2.Tests
             temp.ConvertFahrenheitToKelvin();
 
             //ASSERT
-            Assert.AreEqual(255.37, temp.ConvertFahrenheitToKelvin());
+            Assert.AreEqual(256, temp.ConvertFahrenheitToKelvin());
         }
         [Test]
         public void ConvertKelvinToCelsius_Min_Added_Integer() //Boundary value analysis min value
@@ -229,7 +229,7 @@ namespace Prog8170Assign2.Tests
             temp.ConvertKelvinToFahrenheit();
 
             //ASSERT
-            Assert.AreEqual(-457, temp.ConvertKelvinToFahrenheit());
+            Assert.AreEqual(-458, temp.ConvertKelvinToFahrenheit());
         }
 
         [Test]
@@ -257,7 +257,7 @@ namespace Prog8170Assign2.Tests
             temp.ConvertKelvinToFahrenheit();
 
             //ASSERT
-            Assert.AreEqual(-459, temp.ConvertKelvinToFahrenheit());
+            Assert.AreEqual(-460, temp.ConvertKelvinToFahrenheit());
         }
     }
 }
