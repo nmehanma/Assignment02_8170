@@ -1,3 +1,5 @@
+C:\Users\FamilyPC\source\repos\Prog8170Assign2\Prog8170Assign2.Tests\obj\Debug\Prog8170Assign2.Tests.csproj.AssemblyReference.cache
+C:\Users\FamilyPC\source\repos\Prog8170Assign2\Prog8170Assign2.Tests\obj\Debug\Prog8170Assign2.Tests.csproj.CoreCompileInputs.cache
 C:\Users\FamilyPC\source\repos\Prog8170Assign2\Prog8170Assign2.Tests\bin\Debug\NUnit3.TestAdapter.dll
 C:\Users\FamilyPC\source\repos\Prog8170Assign2\Prog8170Assign2.Tests\bin\Debug\NUnit3.TestAdapter.pdb
 C:\Users\FamilyPC\source\repos\Prog8170Assign2\Prog8170Assign2.Tests\bin\Debug\nunit.engine.dll
@@ -11,8 +13,6 @@ C:\Users\FamilyPC\source\repos\Prog8170Assign2\Prog8170Assign2.Tests\bin\Debug\P
 C:\Users\FamilyPC\source\repos\Prog8170Assign2\Prog8170Assign2.Tests\bin\Debug\Prog8170Assign2.pdb
 C:\Users\FamilyPC\source\repos\Prog8170Assign2\Prog8170Assign2.Tests\bin\Debug\Prog8170Assign2.exe.config
 C:\Users\FamilyPC\source\repos\Prog8170Assign2\Prog8170Assign2.Tests\bin\Debug\nunit.framework.xml
-C:\Users\FamilyPC\source\repos\Prog8170Assign2\Prog8170Assign2.Tests\obj\Debug\Prog8170Assign2.Tests.csproj.AssemblyReference.cache
-C:\Users\FamilyPC\source\repos\Prog8170Assign2\Prog8170Assign2.Tests\obj\Debug\Prog8170Assign2.Tests.csproj.CoreCompileInputs.cache
 C:\Users\FamilyPC\source\repos\Prog8170Assign2\Prog8170Assign2.Tests\obj\Debug\Prog8170Assign2.Tests.csproj.CopyComplete
 C:\Users\FamilyPC\source\repos\Prog8170Assign2\Prog8170Assign2.Tests\obj\Debug\Prog8170Assign2.Tests.dll
 C:\Users\FamilyPC\source\repos\Prog8170Assign2\Prog8170Assign2.Tests\obj\Debug\Prog8170Assign2.Tests.pdb

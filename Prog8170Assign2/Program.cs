@@ -11,14 +11,7 @@ namespace Prog8170Assign2
 
 
             var num1 = Console.ReadLine();
-
-            var num2 = validateIntegerType(num1);
-
-           // var num12 = typeCheckInt(num1);
-         
-
-            //var num2 = validInputType(Decimal.Parse(num1));
-          
+            var num2 = validateIntegerType(num1);       
                       
             temperatureConverter.TemperatureInput = Int32.Parse(num2);
 
