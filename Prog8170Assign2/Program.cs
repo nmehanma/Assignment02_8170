@@ -27,9 +27,7 @@ namespace Prog8170Assign2
             var userSelection = Console.ReadLine();
 
             var newNumber = validateUserSelection(userSelection);
-
-            
-
+           
             switch (newNumber)
             {
                 case 1:
@@ -71,7 +69,7 @@ namespace Prog8170Assign2
         {           
             int numericValue;
             bool isNumber = int.TryParse(input, out numericValue);
-            if (isNumber != true)
+            if (isNumber != true || int.Parse(input) < 1)
             {
                 Console.WriteLine("Please enter an integer value greater than 0");
             }
@@ -80,34 +78,9 @@ namespace Prog8170Assign2
                 return input;                 
             }
             return validateIntegerType(Console.ReadLine());
-        }
-     
-      
-
-
-        public static double validInputType(decimal num1)
-        {           
-            if (num1 % 1 != 0)
-            {
-                Console.WriteLine("Please enter an integer value greater than 0");                                              
-            } else
-            {
-                var num2 = Decimal.ToInt32(num1);
-                return num2;
-            }
-            return validInputType(decimal.Parse(Console.ReadLine()));
-        }
-
-
-        public static double validTemp(int number)
+        }         
+        public static string  validTemp(int number)
         {
-            if (number < 1)
-            {
-                Console.WriteLine("Please enter an integer value greater than 0");
-                number = Int32.Parse(Console.ReadLine());
-            }
-            else
-            { 
                 Console.WriteLine("Please select one of the 7 options to convert your input:");
                 Console.WriteLine("1. Convert Celsius to Fahrenheit");
                 Console.WriteLine("2. Convert Celsius to Kelvin");
@@ -116,10 +89,7 @@ namespace Prog8170Assign2
                 Console.WriteLine("5. Convert Kelvin to Celsius");
                 Console.WriteLine("6. Convert Kelvin to Fahrenheit");
                 Console.WriteLine("7. Exit");
-                return number;
-                                                            
-            }
-            return validTemp(number);
+                return Convert.ToString(number);                                                                                    
         }
         public static int validateUserSelection(String number)
         {
