@@ -10,18 +10,25 @@ namespace Prog8170Assign2
             Console.WriteLine("Please enter the value to be converted, it must be an integer greater than zero.");
 
 
-            var num1 = decimal.Parse(Console.ReadLine());
+            var num1 = Console.ReadLine();
 
-            var num2 = validInputType(num1);
+            var num2 = validateIntegerType(num1);
+
+           // var num12 = typeCheckInt(num1);
+         
+
+            //var num2 = validInputType(Decimal.Parse(num1));
           
                       
-            temperatureConverter.TemperatureInput = (int)num2;
+            temperatureConverter.TemperatureInput = Int32.Parse(num2);
 
             validTemp(temperatureConverter.TemperatureInput);
 
-            var userSelection = decimal.Parse(Console.ReadLine());
+            var userSelection = Console.ReadLine();
 
-            var newNumber = validUserSelection(userSelection);
+            var newNumber = validateUserSelection(userSelection);
+
+            
 
             switch (newNumber)
             {
@@ -60,6 +67,24 @@ namespace Prog8170Assign2
                     return;               
             }
         }
+        public static string validateIntegerType(String input)
+        {           
+            int numericValue;
+            bool isNumber = int.TryParse(input, out numericValue);
+            if (isNumber != true)
+            {
+                Console.WriteLine("Please enter an integer value greater than 0");
+            }
+            else
+            {
+                return input;                 
+            }
+            return validateIntegerType(Console.ReadLine());
+        }
+     
+      
+
+
         public static double validInputType(decimal num1)
         {           
             if (num1 % 1 != 0)
@@ -96,9 +121,11 @@ namespace Prog8170Assign2
             }
             return validTemp(number);
         }
-        public static double validUserSelection(decimal number)
+        public static int validateUserSelection(String number)
         {
-            if(number % 1 != 0)
+            int numericValue;
+            bool isNumber = int.TryParse(number, out numericValue);
+            if (isNumber != true)
             {
                 Console.WriteLine("Please select one of the 7 options to convert your input:");
                 Console.WriteLine("1. Convert Celsius to Fahrenheit");
@@ -107,25 +134,28 @@ namespace Prog8170Assign2
                 Console.WriteLine("4. Convert Fahrenheit to Kelvin");
                 Console.WriteLine("5. Convert Kelvin to Celsius");
                 Console.WriteLine("6. Convert Kelvin to Fahrenheit");
-                Console.WriteLine("7. Exit");              
-            }            
-            else if (number != 1 && number != 2 && number != 3 && number != 4 && number != 5 && number != 6 && number != 7)
-            {
-                Console.WriteLine("Please select one of the 7 options to convert your input:");
-                Console.WriteLine("1. Convert Celsius to Fahrenheit");
-                Console.WriteLine("2. Convert Celsius to Kelvin");
-                Console.WriteLine("3. Convert Fahrenheit to Celsius");
-                Console.WriteLine("4. Convert Fahrenheit to Kelvin");
-                Console.WriteLine("5. Convert Kelvin to Celsius");
-                Console.WriteLine("6. Convert Kelvin to Fahrenheit");
-                Console.WriteLine("7. Exit");               
+                Console.WriteLine("7. Exit");
             }
             else
             {
-                var number2 = Decimal.ToInt32(number);
-                return number2;
-            }            
-            return validUserSelection(decimal.Parse(Console.ReadLine()));
+                var number2 = Int32.Parse(number);
+                if (number2 != 1 && number2 != 2 && number2 != 3 && number2 != 4 && number2 != 5 && number2 != 6 && number2 != 7)
+                {
+                    Console.WriteLine("Please select one of the 7 options to convert your input:");
+                    Console.WriteLine("1. Convert Celsius to Fahrenheit");
+                    Console.WriteLine("2. Convert Celsius to Kelvin");
+                    Console.WriteLine("3. Convert Fahrenheit to Celsius");
+                    Console.WriteLine("4. Convert Fahrenheit to Kelvin");
+                    Console.WriteLine("5. Convert Kelvin to Celsius");
+                    Console.WriteLine("6. Convert Kelvin to Fahrenheit");
+                    Console.WriteLine("7. Exit");
+                }
+                else
+                {
+                    return number2;
+                }
+            }                                      
+            return validateUserSelection(Console.ReadLine());
         }
     }
 }
