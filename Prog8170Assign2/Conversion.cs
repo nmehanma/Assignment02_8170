@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿//Author: Najeam Mehanmal 7457195 Shiva Bhardwaj 8695567
+using System;
 
 namespace Prog8170Assign2
 {
@@ -26,31 +23,31 @@ namespace Prog8170Assign2
             set { temperatureInput = value; }
         }
 
-                             
+
         public double ConvertCelciusToFahrenheit()
-        { 
+        {
             return (this.temperatureInput * 9 / 5) + 32;
         }
         public double ConvertCelciusToKelvin()
         {
-            return (double) Decimal.Round((decimal)(this.temperatureInput + 273.15));
+            return (double)Decimal.Round((decimal)(this.temperatureInput + 273.15));
         }
         public double ConvertKelvinToFahrenheit()
         {
-            return  (double) Decimal.Round((decimal)((this.temperatureInput - 273.15) * 9 / 5 + 32));
+            return (double)Decimal.Round((decimal)((this.temperatureInput - 273.15) * 9 / 5 + 32));
         }
         public double ConvertKelvinToCelsius()
         {
-            return (double) Decimal.Round((decimal)(this.temperatureInput - 273.15));
+            return (double)Decimal.Round((decimal)(this.temperatureInput - 273.15));
         }
         public double ConvertFahrenheitToKelvin()
         {
-            return (double) Decimal.Round((decimal)((this.temperatureInput - 32) * 5 / 9 + 273.15)); 
+            return (double)Decimal.Round((decimal)((this.temperatureInput - 32) * 5 / 9 + 273.15));
         }
         public double ConvertFahrenheitToCelsius()
         {
-            return (double) Decimal.Round((this.temperatureInput - 32) * 5 / 9);
-        }       
+            return (double)Decimal.Round((this.temperatureInput - 32) * 5 / 9);
+        }
     }
 
 }

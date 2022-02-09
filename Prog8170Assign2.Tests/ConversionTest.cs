@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿//Author: Najeam Mehanmal 7457195 Shiva Bhardwaj 8695567
 using NUnit.Framework;
 
 namespace Prog8170Assign2.Tests
@@ -42,7 +38,7 @@ namespace Prog8170Assign2.Tests
         {
             //ARRANGE
             Conversion temp = new Conversion();
-            temp.TemperatureInput = 0;            
+            temp.TemperatureInput = 0;
 
             //ACT
             temp.ConvertCelciusToFahrenheit();
