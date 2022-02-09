@@ -76,7 +76,7 @@ namespace Prog8170Assign2.Tests
         }
 
         [Test]
-        public void ConvertCelsiusToKelvin_Adding_Integer()//Nominal freezing point of water
+        public void ConvertCelsiusToKelvin_FreezingTempNominal_Integer() //Nominal freezing point of water
         {
             //ARRANGE
             Conversion temp = new Conversion();
@@ -118,7 +118,7 @@ namespace Prog8170Assign2.Tests
         }
 
         [Test]
-        public void ConvertFahrenheitToCelsius_Adding_Integer()//Boundary value analysis freezing temperature
+        public void ConvertFahrenheitToCelsius_Nominal_FreezingPointOfWater_Integer()//Boundary value analysis freezing temperature
         {
             //ARRANGE
             Conversion temp = new Conversion();
@@ -136,13 +136,13 @@ namespace Prog8170Assign2.Tests
         {
             //ARRANGE
             Conversion temp = new Conversion();
-            temp.TemperatureInput = -58;
+            temp.TemperatureInput = -40;
 
             //ACT
             temp.ConvertFahrenheitToKelvin();
 
             //ASSERT
-            Assert.AreEqual(223, temp.ConvertFahrenheitToKelvin());
+            Assert.AreEqual(233, temp.ConvertFahrenheitToKelvin());
         }
 
         [Test]
@@ -160,7 +160,7 @@ namespace Prog8170Assign2.Tests
         }
 
         [Test]
-        public void ConvertFahrenheitToKelvin_Adding_Integer()//Boundary value analysis nominal water freezing point
+        public void ConvertFahrenheitToKelvin_FreezingPointWater_Integer()//Boundary value analysis nominal water freezing point
         {
             //ARRANGE
             Conversion temp = new Conversion();
@@ -201,7 +201,7 @@ namespace Prog8170Assign2.Tests
         }
 
         [Test]
-        public void ConvertKelvinToCelsius_Adding_Integer()//Boundary value analysis water freezing point
+        public void ConvertKelvinToCelsius_FreezingPointOfWater_Integer()//Boundary value analysis water freezing point
         {
             //ARRANGE
             Conversion temp = new Conversion();
@@ -242,7 +242,7 @@ namespace Prog8170Assign2.Tests
         }
 
         [Test]
-        public void ConvertKelvinToFahrenheit_Adding_Integer()//Boundary value analysis freezing point of water
+        public void ConvertKelvinToFahrenheit_FreezingPointOfWater_Integer()//Boundary value analysis freezing point of water
         {
             //ARRANGE
             Conversion temp = new Conversion();
