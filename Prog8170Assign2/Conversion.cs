@@ -33,7 +33,7 @@ namespace Prog8170Assign2
         }
         public double ConvertCelciusToKelvin()
         {
-            return (this.temperatureInput + 273.15);
+            return (double) Decimal.Round((decimal)(this.temperatureInput + 273.15));
         }
         public double ConvertKelvinToFahrenheit()
         {
@@ -41,7 +41,7 @@ namespace Prog8170Assign2
         }
         public double ConvertKelvinToCelsius()
         {
-            return this.temperatureInput - 273.15;
+            return (double) Decimal.Round((decimal)(this.temperatureInput - 273.15));
         }
         public double ConvertFahrenheitToKelvin()
         {
